@@ -27,8 +27,8 @@ Chaque tentative d’accès est journalisée en WiFi et affichée en local.
 | Capteur d’empreintes digitales | 1        | Capteur UART |
 | Module WiFi ESP8266            | 1        | Communication Web |
 | Écran LCD 16x2 avec I2C        | 1        | Affichage |
-| Buzzer (optionnel)             | 1        | Signaux sonores |
-| LEDs (optionnelles)            | 2-3      | Statut d'accès |
+| Buzzer              | 1        | Signaux sonores |
+| LEDs           | 2      | Statut d'accès |
 | Alimentation 5V               | 1        | (USB ou adaptateur) |
 
 ---
@@ -76,51 +76,6 @@ Accès : `10.10.52.89`
 
 À chaque événement (accès autorisé/refusé), le système envoie :
 - Un message Telegram
-- Optionnellement : des logs sur la page Web
-
-**Token et ID Chat** sont stockés dans un fichier `secrets.h`.
-
----
-
-## 🛠️ Organisation du Projet
-
-```
-Nomisys/
-├── README.md
-├── .gitignore
-├── arduino/
-│   ├── Nomisys.ino
-│   └── src/
-│       ├── RFID.h
-│       ├── RFID.cpp
-│       ├── Fingerprint.h
-│       ├── Fingerprint.cpp
-│       ├── LCD.h
-│       ├── LCD.cpp
-├── esp8266/
-│   ├── ESP_Nomisys.ino
-│   ├── secrets.h
-│   └── webserver/
-│       └── index.html
-├── A_schematic_wiring_diagram_displays_a_multi-factor.png
-```
-
----
-
-## 🚀 Fonctionnement Résumé
-
-**Arduino Uno** :
-- Lecture RFID
-- Vérification Empreinte
-- Commande LCD
-- Envoi des événements vers ESP8266
-
-**ESP8266** :
-- Réception via UART
-- Mise à jour Webserver
-- Notification Telegram
-
----
 
 
 
