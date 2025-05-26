@@ -58,7 +58,7 @@ Chaque tentative d’accès est journalisée en WiFi et affichée en local.
 ---
 
 ## 🖍️ Schéma du Montage
-
+![Schéma](fichier/fretizig.png)
 
 ---
 
