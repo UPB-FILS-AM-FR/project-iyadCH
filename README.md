@@ -54,6 +54,21 @@ Chaque tentative d’accès est journalisée en WiFi et affichée en local.
 | ESP8266 GND  | GND          | Masse |
 
 ---
+## 📚 Bibliothèques utilisées
+
+| **Bibliothèque**           | **Description**                                                                  | **Utilisation**                                                                 |
+|----------------------------|----------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
+| `SPI`                      | Permet la communication via le bus SPI.                                         | Utilisée pour la communication avec le module RFID MFRC522.                     |
+| `MFRC522`                  | Bibliothèque pour les lecteurs RFID MFRC522.                                    | Utilisée pour lire les tags RFID.                                               |
+| `Wire`                     | Permet la communication via le bus I2C.                                         | Utilisée pour la communication avec des périphériques I2C comme l'écran LCD.   |
+| `LiquidCrystal_I2C`       | Contrôle les écrans LCD via I2C.                                                | Utilisée pour afficher des messages sur l'écran LCD I2C.                        |
+| `Adafruit_Fingerprint`    | Bibliothèque pour les capteurs d'empreintes digitales Adafruit.                 | Utilisée pour interfacer le capteur d'empreintes digitales.                     |
+| `SoftwareSerial`          | Permet la communication série sur d'autres broches numériques.                  | Utilisée pour la communication série avec l'ESP8266 ou d'autres périphériques. |
+| `ESP8266WiFi`             | Bibliothèque Wi-Fi principale pour l'ESP8266.                                   | Utilisée pour connecter l'ESP8266 à un réseau Wi-Fi.                            |
+| `ESP8266WebServer`        | Bibliothèque de serveur web simple pour ESP8266.                                | Utilisée pour héberger une interface web locale.                               |
+| `WiFiClientSecure`        | Permet des connexions HTTPS via Wi-Fi sur ESP8266.                              | Utilisée pour des communications sécurisées (ex. envoi de messages Telegram).   |
+
+---
 
 ## 🖍️ Schéma du Montage
 ![Schéma](fichier/fretizig.png)
