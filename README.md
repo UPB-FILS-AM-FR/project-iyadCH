@@ -13,7 +13,7 @@ Nomisys est un système de contrôle d’accès combinant plusieurs moyens d’a
 - Écran LCD I2C pour interface utilisateur
 
 Chaque tentative d’accès est journalisée en WiFi et affichée en local.
-
+![draw](fichier/drawio.png)
 ---
 
 ## 🛠️ Matériel Utilisé
