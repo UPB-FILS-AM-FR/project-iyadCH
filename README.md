@@ -2,7 +2,6 @@
 
 ---
 
-![logo](fichier/logo.png)
 
 ## 📜 Présentation du projet
 
@@ -15,7 +14,6 @@ Nomisys est un système de contrôle d’accès combinant plusieurs moyens d’a
 
 Chaque tentative d’accès est journalisée en WiFi et affichée en local.
 
-![res](fichier/resume.png)
 ---
 
 ## 🛠️ Matériel Utilisé
